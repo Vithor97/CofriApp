@@ -6,8 +6,8 @@ import AuthContext from '../../src/ApiContext/auth';
 
 const Routes = () => {
     
-    const { logado } = useContext(AuthContext)
-    //const [logado, setLogado] = useState(false)
+    //const { logado } = useContext(AuthContext)
+    const [logado, setLogado] = useState(false)
 
     
     return logado ? <AppStack/> : <AuthStack/>

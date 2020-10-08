@@ -15,7 +15,11 @@ function Signin () {
     const { navigate } = useNavigation();
 
     function handleLogin () {
-        navigate("Teste")
+        navigate("Teste");
+    }
+
+    function handleToSignup(){
+        navigate("Signup");
     }
 
     return (
@@ -44,7 +48,7 @@ function Signin () {
                 <Text style={styles.loginText}>LOGIN</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleToSignup}>
                 <Text style={styles.loginText}>Signup</Text>
             </TouchableOpacity>
         </View>
